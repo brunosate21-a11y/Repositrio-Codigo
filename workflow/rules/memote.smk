@@ -10,3 +10,5 @@ rule memote:
         "workflow/envs/memote.yaml"
     script:
         "workflow/scripts/memote.py"
+
+

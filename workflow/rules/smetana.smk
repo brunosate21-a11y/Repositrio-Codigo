@@ -13,4 +13,4 @@ rule smetana:
     script:
         "workflow/scripts/smetana.py"
 
-        
+
