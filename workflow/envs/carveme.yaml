@@ -1,7 +1,7 @@
 channels:
-  - bioconda
   - conda-forge
-  - defaults
+  - bioconda
+  - nodefaults
 dependencies:
   - carveme=1.6.1
   - diamond
