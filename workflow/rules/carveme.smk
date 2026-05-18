@@ -1,6 +1,6 @@
 rule carveme:
     input:
-        genome  = "data/mags/{mag}.fna"
+        genome  = "data/mags/{mag}.faa"
     output:
         model   = "results/gems/{mag}.xml"
     params:
