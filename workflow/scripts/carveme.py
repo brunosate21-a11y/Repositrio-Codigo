@@ -5,7 +5,7 @@ from snakemake.shell import shell
 
 genome = snakemake.input.genome
 model = snakemake.output.model
-solver = snakemake.params.get("solver", "glpk")
+solver = snakemake.params.get("solver", "scip")
 media = snakemake.params.get("media", "M9")
 
 log = snakemake.log_fmt_shell(stdout=True, stderr=True)

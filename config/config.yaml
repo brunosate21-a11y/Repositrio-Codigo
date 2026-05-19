@@ -10,6 +10,6 @@ simulate_reads:
 MAGS:
   - Ecoli_K12_MG1655
 
-solver: glpk
+solver: scip
 media: M9
 
