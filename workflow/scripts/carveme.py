@@ -14,6 +14,7 @@ shell(
     "carve {genome} "
     "--output {model} "
     "--solver {solver} "
+    "--gapfill {media} "
     "--mediadb {media} "
     "{log}"
 )
