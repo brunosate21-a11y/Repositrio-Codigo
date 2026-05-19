@@ -1,5 +1,29 @@
 # Changelog
 
+## 1.0.0 (2026-05-19)
+
+
+### Features
+
+* Add meta.yaml in bio ([2fdf411](https://github.com/brunosate21-a11y/Metabolic-Modeling-Workflow./commit/2fdf4119883e65d593eabad934fb519855bb9e8d))
+* Add rules.smk and delete the "wrapper" part inside and add the "conda", "script" part with the right paths ([65d8758](https://github.com/brunosate21-a11y/Metabolic-Modeling-Workflow./commit/65d8758724ec7bde9a45beed168c9da4b4bea6fa))
+* Changing the channels order on the workflow env ([358418e](https://github.com/brunosate21-a11y/Metabolic-Modeling-Workflow./commit/358418eacd80cd2978280ea97e08e0417f769a50))
+* deleted common rule ([2b4ddda](https://github.com/brunosate21-a11y/Metabolic-Modeling-Workflow./commit/2b4ddda6af0b3ae8cb9e8ac0cf8c82eb3495e301))
+* deletes rule ([c631682](https://github.com/brunosate21-a11y/Metabolic-Modeling-Workflow./commit/c631682bfb17241c2d36df8ae0b9cbec94af20bd))
+* Moving .yaml from bio to workflow/env ([e495be9](https://github.com/brunosate21-a11y/Metabolic-Modeling-Workflow./commit/e495be9ea16bf39f610bb7a7dc957c68ef40a0f8))
+* Moving the envirnoment of the wrappers to the right place ([3033cde](https://github.com/brunosate21-a11y/Metabolic-Modeling-Workflow./commit/3033cdee72d8c661502a7a8a61f22a19c7e766a4))
+* Moving the wrappers to the script fold ([3772046](https://github.com/brunosate21-a11y/Metabolic-Modeling-Workflow./commit/3772046f420ef1ca830ec8ebb12fe60ac235e52a))
+* Not necessary ([cf138f0](https://github.com/brunosate21-a11y/Metabolic-Modeling-Workflow./commit/cf138f080054f97a66450e2b863c1e862112db39))
+* test micom and steadycom ([b79b91f](https://github.com/brunosate21-a11y/Metabolic-Modeling-Workflow./commit/b79b91ffbb686bd3b824cd6b93b338e86e9dca63))
+
+
+### Bug Fixes
+
+* correct workflow paths and carveme arguments ([37b486e](https://github.com/brunosate21-a11y/Metabolic-Modeling-Workflow./commit/37b486e812f639e06175df75939cf3899a0b1391))
+* corrigir caminhos e argumentos do workflow ([35ea1c4](https://github.com/brunosate21-a11y/Metabolic-Modeling-Workflow./commit/35ea1c4a22c3c8358861189a892cd32b55bd85c5))
+* implement MICOM and SteadyCom wrappers, fix SMETANA flags ([6dde237](https://github.com/brunosate21-a11y/Metabolic-Modeling-Workflow./commit/6dde2379e021dbcc5dc950e7020b975c484dcff4))
+* solver change to scip ([c3cd989](https://github.com/brunosate21-a11y/Metabolic-Modeling-Workflow./commit/c3cd989ef95e660aa3cd77d0f80a073dce947430))
+
 ## [1.3.0](https://github.com/snakemake-workflows/snakemake-workflow-template/compare/v1.2.0...v1.3.0) (2026-03-27)
 
 
