@@ -1,3 +1,4 @@
+MAGS = config["MAGS"]
 rule smetana:
     input:
         models = expand("results/gems/{mag}.xml", mag=MAGS)
@@ -9,8 +10,10 @@ rule smetana:
     log:
         "logs/smetana/smetana.log"
     conda:
-        "workflow/envs/smetana.yaml"
+        "../envs/smetana.yaml"
+
     script:
-        "workflow/scripts/smetana.py"
+        "../scripts/smetana.py"
+
 
 

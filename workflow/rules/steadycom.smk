@@ -1,3 +1,4 @@
+MAGS = config["MAGS"]
 rule steadycom:
     input:
         models     = expand("results/gems/{mag}.xml", mag=MAGS)
@@ -6,7 +7,9 @@ rule steadycom:
     log:
         "logs/steadycom/steadycom.log"
     conda:
-        "workflow/envs/steadycom.yaml"
+        "../envs/steadycom.yaml"
+
     script:
-        "workflow/scripts/steadycom.py"
+        "../scripts/steadycom.py"
+
         

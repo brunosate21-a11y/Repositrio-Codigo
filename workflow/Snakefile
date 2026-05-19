@@ -1,37 +1,26 @@
-# Main entrypoint of the workflow.
-# Please follow the best practices:
-# https://snakemake.readthedocs.io/en/stable/snakefiles/best_practices.html,
-# in particular regarding the standardized folder structure mentioned there.
-
-
-# load configuration
-# -----------------------------------------------------
 configfile: "config/config.yaml"
 
+include: "rules/carveme.smk"
+include: "rules/micom.smk"
+include: "rules/smetana.smk"
+include: "rules/steadycom.smk"
 
-# load rules
-# -----------------------------------------------------
-include: "rules/common.smk"
-include: "rules/process_reads.smk"
-
-
-# optional messages, log and error handling
-# -----------------------------------------------------
 onstart:
     print("\n--- Analysis started ---\n")
-
 
 onsuccess:
     print("\n--- Workflow finished! ---\n")
 
-
 onerror:
     print("\n--- An error occurred! ---\n")
 
+MAGS = config["MAGS"]
 
-# target rules
-# -----------------------------------------------------
 rule all:
     default_target: True
     input:
-        "results/multiqc/multiqc_report.html",
+        expand("results/gems/{mag}.xml", mag=MAGS),
+        "results/micom/exchange_fluxes.tsv",
+        "results/smetana/global.tsv",
+        "results/smetana/detailed.tsv",
+        "results/steadycom/abundances.tsv"

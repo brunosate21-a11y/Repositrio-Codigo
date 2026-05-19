@@ -1,3 +1,4 @@
+MAGS = config["MAGS"]
 rule micom:
     input:
         models          = expand("results/gems/{mag}.xml", mag=MAGS)
@@ -6,7 +7,9 @@ rule micom:
     log:
         "logs/micom/micom.log"
     conda:
-        "workflow/envs/micom.yaml"
+        "../envs/micom.yaml"
+
     script:
-        "workflow/scripts/micom.py"
+        "../scripts/micom.py"
+
         

@@ -10,7 +10,8 @@ rule carveme:
     log:
         "logs/carveme/{mag}.log"
     conda:
-        "workflow/envs/carveme.yaml"
+        "../envs/carveme.yaml"
     script:
-        "workflow/scripts/carveme.py"
+        "../scripts/carveme.py"
+
         

@@ -6,3 +6,10 @@ get_genome:
 simulate_reads:
   read_length: 100
   read_number: 10000
+
+MAGS:
+  - Ecoli_K12_MG1655
+
+solver: glpk
+media: M9
+
