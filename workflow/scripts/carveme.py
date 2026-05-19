@@ -15,6 +15,5 @@ shell(
     "--output {model} "
     "--solver {solver} "
     "--gapfill {media} "
-    "--mediadb {media} "
     "{log}"
 )
